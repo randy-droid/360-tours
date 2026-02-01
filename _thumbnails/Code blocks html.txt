@@ -1,0 +1,302 @@
+<div class="pano-grid">
+
+<div class="pano-card">
+  <a href="https://randy-droid.github.io/360-tours/Kenwood/index.html" target="_blank">
+    <img src="https://github.com/randy-droid/360-tours/blob/main/_thumbnails/kenwood-thumb.jpg?raw=true" alt="Kenwood Tour">
+    
+    <div class="pano-overlay">
+      <div class="pano-text">
+        <h3>KENWOOD</h3>
+        <p>View 360 Tour</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<div class="pano-card">
+  <a href="https://randy-droid.github.io/360-tours/StPete/index.html" target="_blank">
+    <img src="https://github.com/randy-droid/360-tours/blob/main/_thumbnails/stpete-thumb.jpg?raw=true?raw=true" alt="St Pete Tour">
+    
+    <div class="pano-overlay">
+      <div class="pano-text">
+        <h3>St Pete</h3>
+        <p>View 360 Tour</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+ <div class="pano-card">
+  <a href="https://randy-droid.github.io/360-tours/Powell/index.html" target="_blank">
+    <img src="https://raw.githubusercontent.com/randy-droid/360-tours/refs/heads/main/_thumbnails/powell.jpg?raw=true?raw=true" alt="Powell Tour">
+    
+    <div class="pano-overlay">
+      <div class="pano-text">
+        <h3>Powell</h3>
+        <p>View 360 Tour</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+ <div class="pano-card">
+  <a href="https://randy-droid.github.io/360-tours/Waterfront/index.html" target="_blank">
+    <img src="https://raw.githubusercontent.com/randy-droid/360-tours/refs/heads/main/_thumbnails/waterfront.jpg?raw=true?raw=true" alt="Waterfront Tour">
+    
+    <div class="pano-overlay">
+      <div class="pano-text">
+        <h3>Waterfront</h3>
+        <p>View 360 Tour</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+ <div class="pano-card">
+  <a href="https://randy-droid.github.io/360-tours/Southsideworks/index.html" target="_blank">
+    <img src="https://raw.githubusercontent.com/randy-droid/360-tours/refs/heads/main/_thumbnails/southside.jpg?raw=true?raw=true" alt="Southside Works Tour">
+    
+    <div class="pano-overlay">
+      <div class="pano-text">
+        <h3>Southside Works</h3>
+        <p>View 360 Tour</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+ <div class="pano-card">
+  <a href="https://randy-droid.github.io/360-tours/Tarponsprings/index.html" target="_blank">
+    <img src="https://raw.githubusercontent.com/randy-droid/360-tours/refs/heads/main/_thumbnails/tarponsprings.jpg?raw=true?raw=true" alt="Tarpon Springs Tour">
+    
+    <div class="pano-overlay">
+      <div class="pano-text">
+        <h3>Tarpon Springs</h3>
+        <p>View 360 Tour</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+ 
+<div class="pano-card">
+  <a href="https://randy-droid.github.io/360-tours/Polkstables/index.html" target="_blank">
+    <img src="https://raw.githubusercontent.com/randy-droid/360-tours/refs/heads/main/_thumbnails/polk.jpg?raw=true?raw=true" alt="Polk Stables Tour">
+    
+    <div class="pano-overlay">
+      <div class="pano-text">
+        <h3>Polk Stables</h3>
+        <p>View 360 Tour</p>
+      </div>
+    </div>
+  </a>
+</div>
+
+ <div class="pano-card">
+  <a href="https://randy-droid.github.io/360-tours/Lawrenceville/index.html" target="_blank">
+    <img src="https://github.com/randy-droid/360-tours/blob/main/_thumbnails/lawrence.jpg?raw=true?raw=true?raw=true" alt="Lawrenceville Tour">
+    
+    <div class="pano-overlay">
+      <div class="pano-text">
+        <h3>Lawrenceville</h3>
+        <p>View 360 Tour</p>
+      </div>
+    </div>
+  </a>
+  </div>
+  
+</div>
+
+ 
+
+ color variations from video section
+  "rgba(238, 71, 146, 0.9)",   
+    "rgba(40, 50, 127, 0.9)",    
+    "rgba(0, 137, 207, 0.9)" 
+	
+	
+	Custom CSS
+	
+	
+ /* --- 360 PANORAMA GALLERY MASTER CSS --- */
+
+/* 1. THE GRID LAYOUT */
+.pano-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 side-by-side on desktop */
+  gap: 25px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* 2. THE CARD DESIGN */
+.pano-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px; /* Professional rounded corners */
+  aspect-ratio: 16 / 9; /* Keeps all tours uniform */
+  background: #000;
+}
+
+.pano-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+/* 3. THE TEXT STYLING */
+.pano-text {
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+}
+
+.pano-text h3 {
+  color: #ffffff !important; /* Forces title to white */
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-size: 1.4rem;
+}
+
+.pano-text p {
+  color: #dddddd !important;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* 4. THE OVERLAY & 3-COLOR CYCLE */
+.pano-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Hidden until hover */
+  transition: opacity 0.4s ease;
+}
+
+/* Color 1: Blue-ish (Tours 1, 4, 7...) */
+.pano-card:nth-child(3n+1) .pano-overlay {
+  background: rgba(238, 71, 146, 0.9); 
+}
+
+/* Color 2: Dark Grey/Black (Tours 2, 5, 8...) */
+.pano-card:nth-child(3n+2) .pano-overlay {
+  background: rgba(40, 50, 127, 0.9);
+}
+
+/* Color 3: Muted Purple/Brand Color (Tours 3, 6, 9...) */
+.pano-card:nth-child(3n+3) .pano-overlay {
+  background: rgba(0, 137, 207, 0.9);
+}
+
+/* 5. HOVER TRIGGERS */
+.pano-card:hover .pano-overlay {
+  opacity: 1;
+}
+
+.pano-card:hover img {
+  transform: scale(1.1); /* Subtle zoom effect */
+  filter: blur(2px); /* Makes text easier to read on hover */
+}
+
+/* 6. MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .pano-grid {
+    grid-template-columns: 1fr; /* Stacks to 1 column on phones */
+    gap: 15px;
+  }
+}
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
